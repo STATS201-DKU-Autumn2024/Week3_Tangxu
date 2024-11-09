@@ -30,3 +30,19 @@ The primary code for this analysis is contained in the Jupyter Notebook file **A
 1. Open the **Advancing_Predictive_Maintenance.ipynb** file directly in Google Colab by selecting "Open in Colab" above or by uploading it to your Colab environment.
 2. Ensure that all required libraries (e.g., `pandas`, `numpy`, `matplotlib`, `scikit-learn`) are installed within the Colab environment.
 3. Execute each cell in the notebook to perform data analysis, visualization, and model training for predictive maintenance.
+
+## Visualization
+
+This project includes key visualizations to help interpret data trends and understand predictive maintenance patterns within the **MetroPT dataset** and **NASA Turbofan Engine Degradation Simulation Data**. Visualizations are designed to provide insights into component degradation, operational conditions, and sensor data trends, all of which contribute to predictive maintenance modeling.
+
+### Example Visualization
+- **Time-Series Trends for Sample Unit in NASA Dataset**: This plot illustrates degradation trends for a sample unit over time, highlighting the relationship between operational cycles and sensor readings. Such visualizations help in identifying patterns in component wear and predicting the Remaining Useful Life (RUL) of high-stress components.
+
+![Time-Series Trends for Sample Unit in NASA Dataset](Time-Series%20Trends%20for%20Sample%20Unit%20in%20NASA%20Dataset.JPG)
+
+### Additional Visualizations
+Other visualizations in the notebook cover:
+- **Failure Rate Over Time**: Shows how failure rates vary across different components and operational settings.
+- **Correlation Heatmaps**: Highlights relationships between various sensor readings and operational conditions, aiding in feature selection for the predictive models.
+
+These visualizations enhance the interpretability of the data, allowing for a more comprehensive understanding of factors influencing predictive maintenance in vehicle systems.
