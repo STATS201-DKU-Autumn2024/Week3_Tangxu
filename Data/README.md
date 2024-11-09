@@ -10,8 +10,7 @@ These datasets allow for the integration of multimodal data to enhance predictiv
 - Saxena, A., & Goebel, K. 2008. "Turbofan Engine Degradation Simulation Data Set." NASA Prognostics Data Repository, NASA Ames Research Center, Moffett Field, CA. https://data.nasa.gov/Aeorspace/CMAPSS-Jet-Engine-Simulated-Data/ff5v-kuh6
 - Veloso, B., Gama, J., Ribeiro, R., & Pereira, P. 2022. "MetroPT: A Benchmark Dataset for Predictive Maintenance." Zenodo. https://doi.org/10.5281/zenodo.6854240.
 
-
-Here is a structured data dictionary for the datasets.
+Here is a structured data dictionary for the datasets:
 # Data Dictionary for the Predictive Maintenance Project
 
 ## MetroPT Dataset
