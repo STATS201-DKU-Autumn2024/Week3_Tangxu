@@ -25,15 +25,24 @@ Here is a structured data dictionary for the datasets:
 | VIBRATION_LEVEL    | Measured vibration level of the component during operation.                                     | Float      | m/s²                   |
 | INSPECTION_DATE    | Date of the most recent inspection or maintenance activity.                                     | Date       | YYYY-MM-DD             |
 
-## NASA Turbofan Engine Degradation Simulation Dataset
+## NASA Turbofan Engine Degradation Simulation Dataset (FD001, FD002, FD003, FD004)
 
-| **Variable**       | **Description**                                                                                 | **Type**   | **Unit**              |
-|--------------------|-------------------------------------------------------------------------------------------------|------------|------------------------|
-| CYCLE              | Operational cycle number, representing a single unit of operation for the engine.               | Integer    | -                      |
-| FAN_SPEED          | Speed of the engine's fan, providing insight into engine performance and stress levels.         | Float      | RPM                    |
-| CORE_SPEED         | Speed of the engine core, contributing to overall degradation analysis.                         | Float      | RPM                    |
-| ENGINE_TEMPERATURE | Temperature inside the engine during each operational cycle, indicating stress levels.          | Float      | Degrees Celsius        |
-| PRESSURE_RATIO     | Ratio of pressure across the engine's various sections, relevant for performance assessment.    | Float      | -                      |
-| DEGRADATION_LABEL  | Indicates the degradation stage (1 = Initial, 2 = Moderate, 3 = Severe).                        | Integer    | -                      |
+| **Variable**           | **Description**                                                                                             | **Type**   | **Unit**          |
+|------------------------|-------------------------------------------------------------------------------------------------------------|------------|--------------------|
+| UNIT_NUMBER            | Unique identifier for each engine in the dataset.                                                           | Integer    | -                 |
+| TIME_CYCLES            | Time in operational cycles, representing a single unit of operation for the engine.                         | Integer    | Cycles            |
+| OP_SETTING_1           | Operational setting 1, one of three settings affecting engine performance.                                  | Float      | -                 |
+| OP_SETTING_2           | Operational setting 2, affecting engine performance in various conditions.                                  | Float      | -                 |
+| OP_SETTING_3           | Operational setting 3, another parameter influencing engine performance under different conditions.         | Float      | -                 |
+| SENSOR_1               | Sensor measurement 1, indicative of engine condition and performance.                                       | Float      | -                 |
+| SENSOR_2               | Sensor measurement 2, representing real-time engine metrics.                                                | Float      | -                 |
+| SENSOR_3 to SENSOR_26  | Additional sensor measurements (3-26) capturing various engine conditions and degradation metrics.          | Float      | -                 |
+| RUL (Test Set only)    | Remaining Useful Life (RUL) values provided for test data, indicating the number of cycles remaining until failure. | Integer | Cycles            |
 
-This data dictionary provides an overview of the primary variables used in the project, detailing each variable’s description, data type, and unit. This structured format facilitates consistent use and understanding of the data for predictive maintenance modeling.
+### Dataset Summary
+- **FD001**: 100 train and 100 test trajectories, one operational condition (Sea Level) and one fault mode (HPC Degradation).
+- **FD002**: 260 train and 259 test trajectories, six operational conditions and one fault mode (HPC Degradation).
+- **FD003**: 100 train and 100 test trajectories, one operational condition (Sea Level) and two fault modes (HPC Degradation, Fan Degradation).
+- **FD004**: 248 train and 249 test trajectories, six operational conditions and two fault modes (HPC Degradation, Fan Degradation).
+
+This data dictionary outlines the key variables across multiple subsets (FD001-FD004) within the dataset, capturing time-series sensor readings, operational settings, and real-time metrics essential for predictive maintenance modeling.
