@@ -46,3 +46,14 @@ Other visualizations in the notebook cover:
 - **Correlation Heatmaps**: Highlights relationships between various sensor readings and operational conditions, aiding in feature selection for the predictive models.
 
 These visualizations enhance the interpretability of the data, allowing for a more comprehensive understanding of factors influencing predictive maintenance in vehicle systems.
+
+## Dataset
+
+This project utilizes two primary datasets to explore and model predictive maintenance:
+
+1. **MetroPT Dataset**: This dataset provides detailed logs on maintenance activities, operational metrics, and failure events from Lisbon’s metro system. It includes key variables that track the conditions and degradation of metro components over time, offering a robust foundation for predictive maintenance modeling in public transportation.
+
+2. **NASA Turbofan Engine Degradation Simulation Data**: This dataset contains real-time sensor readings from simulated turbofan engines under different operational conditions. It captures degradation patterns across high-stress engine components, allowing for real-time analysis and prediction of component failure.
+
+### Data Dictionary
+A comprehensive data dictionary describing all relevant variables in each dataset can be found in the [Data Dictionary](https://github.com/STATS201-DKU-Autumn2024/Week3_Tangxu/tree/main/Data) section of this repository. The data dictionary includes detailed descriptions, data types, and units for each variable, facilitating better understanding and usage of the datasets within the predictive maintenance context.
